@@ -6,11 +6,11 @@ import Link from "next/link";
 
 export default function Home() {
 
-  const story_info = [{id: 1, text:"In San Francisco, bakeries are more than bread–they are community.", image: "/bakery-outside.jpg", alt:"it&apos;s the outside of a bakery"}, 
-    {id:2, text: "Over the past five years, the city has witnessed a shift in its bakery landscape. While specific numbers of openings and closures are not readily available, notable events include the closure of Bakers of Paris, a wholesale bakery that had served San Francisco for nearly four decades, in early 2020.", image: "/bakery-empty.jpg", alt:"it&apos;s an empty bakery" },
-    {id:3, text: "San Francisco is the beating heart of baking in the U.S. Since the Gold Rush, San Francisco sourdough put American bread on the map, its tangy flavor becoming integral to the city&apos;s identity. From historic institutions like Boudin to new artisans experimenting with heritage grains and global influences like Tartine, generations work to keep the baking culture alive.", image: "/bakery-newspaper.png", alt:"it&apos;s a bunch of articles for a bakery" },
-    {id:4, text: "Despite challenges such as rising operational costs and competition from larger chains, San Francisco&apos;s bakery community continues to thrive, driven by innovation and a deep connection to the city&apos;s diverse neighborhoods.", image: "/bakery-full.jpeg", alt: "it&apos;s a full bakery"},
-    {id:5, text: "future?", image: "/bakery-future.png", alt: "it&apos;s a futuristic bakery"},
+  const story_info = [{id: 1, text:"In San Francisco, bakeries are more than bread–they are community.", image: "/bakery-outside.jpg", alt:"it's the outside of a bakery"}, 
+    {id:2, text: "Over the past five years, the city has witnessed a shift in its bakery landscape. While specific numbers of openings and closures are not readily available, notable events include the closure of Bakers of Paris, a wholesale bakery that had served San Francisco for nearly four decades, in early 2020.", image: "/bakery-empty.jpg", alt:"it's an empty bakery" },
+    {id:3, text: "San Francisco is the beating heart of baking in the U.S. Since the Gold Rush, San Francisco sourdough put American bread on the map, its tangy flavor becoming integral to the city's identity. From historic institutions like Boudin to new artisans experimenting with heritage grains and global influences like Tartine, generations work to keep the baking culture alive.", image: "/bakery-newspaper.png", alt:"it's a bunch of articles for a bakery" },
+    {id:4, text: "Despite challenges such as rising operational costs and competition from larger chains, San Francisco's bakery community continues to thrive, driven by innovation and a deep connection to the city's diverse neighborhoods.", image: "/bakery-full.jpeg", alt: "it's a full bakery"},
+    {id:5, text: "future?", image: "/bakery-future.png", alt: "it's a futuristic bakery"},
   ];
 
   const [currentSection, setCurrentSection] = useState(0);
