@@ -4,7 +4,7 @@ export default function Laura(){
     return (
         <div className="w-screen min-h-screen">
             <div className="grid grid-rows-[20px_1fr_20px] p-10 gap-10" >
-                <span className="font-semibold items-center text-center justify-center">this is laura's profile</span>
+                <span className="font-semibold items-center text-center justify-center">this is laura&apos;s profile</span>
                 <div className="grid grid-cols-[1fr_1fr]">
 
                     <div className="text-center flex flex-col items-end">
