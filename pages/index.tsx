@@ -19,27 +19,16 @@ export default function Home() {
     {text: "future?", image_src: "/bakery-future.png", alt: "it's a futuristic bakery", image: "true"},
   ];
 
-  // const [currentSection, setCurrentSection] = useState(0);
 
 
   return (
     <div className="relative w-screen min-h-screen">
-   
-      {/* {story_info[currentSection].image && <div
-        className="fixed inset-0 w-screen h-screen bg-cover bg-center transition-all duration-500"
-        style={{ backgroundImage: `url('${story_info[currentSection].image_src}')` }}
-      />} */}
+
 
       <div className="relative z-10 flex flex-col items-center w-screen">
         {story_info.map((part, index) => {
           const { ref, inView } = useInView({ threshold: 0.5, triggerOnce: false });
           
-          // // checking if the current section is outdated 
-          // useEffect(() => {
-          //   if (inView) {
-          //     setCurrentSection(index);
-          //   }
-          // }, [inView, index]);
 
           return (
             <div key={index} ref={ref} className="w-screen h-screen flex justify-center bg-cover items-center" style={{backgroundImage: `url('${part.image_src}')`}}>
@@ -55,7 +44,7 @@ export default function Home() {
                 <div className="flex items-center flex-col items-center justify-center">
                   <div className="text-xl font-bold bg-yellow-100">pain-demic (read this in french)</div>
                   <div className="bg-yellow-100"> 
-                    by <Link href="/beatriz">beatriz aguiar</Link>,{" "}
+                    by <Link href="/beatriz" className="">beatriz aguiar</Link>,{" "}
                     <Link href="/laura">laura félix</Link>,{" "}
                     <Link href="/zoe">zoe chao</Link>
                   </div>
@@ -68,7 +57,7 @@ export default function Home() {
               {part.image && <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.8 }}
                 className="bg-white p-10 rounded-xl shadow-lg text-center flex flex-col items-center relative"
                 style={{ maxWidth: "80vw", width: "600px"}}
               >
