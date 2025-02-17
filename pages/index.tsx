@@ -19,30 +19,30 @@ export default function Home() {
     {text: "future?", image_src: "/bakery-future.png", alt: "it's a futuristic bakery", image: "true"},
   ];
 
-  const [currentSection, setCurrentSection] = useState(0);
+  // const [currentSection, setCurrentSection] = useState(0);
 
 
   return (
     <div className="relative w-screen min-h-screen">
    
-      {story_info[currentSection].image && <div
+      {/* {story_info[currentSection].image && <div
         className="fixed inset-0 w-screen h-screen bg-cover bg-center transition-all duration-500"
         style={{ backgroundImage: `url('${story_info[currentSection].image_src}')` }}
-      />}
+      />} */}
 
       <div className="relative z-10 flex flex-col items-center w-screen">
         {story_info.map((part, index) => {
           const { ref, inView } = useInView({ threshold: 0.5, triggerOnce: false });
           
-          // checking if the current section is outdated 
-          useEffect(() => {
-            if (inView) {
-              setCurrentSection(index);
-            }
-          }, [inView, index]);
+          // // checking if the current section is outdated 
+          // useEffect(() => {
+          //   if (inView) {
+          //     setCurrentSection(index);
+          //   }
+          // }, [inView, index]);
 
           return (
-            <div key={index} ref={ref} className="w-screen h-screen flex justify-center items-center">
+            <div key={index} ref={ref} className="w-screen h-screen flex justify-center bg-cover items-center" style={{backgroundImage: `url('${part.image_src}')`}}>
               
               {/* title of the story*/}
               {part.header && 
@@ -70,7 +70,7 @@ export default function Home() {
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
                 transition={{ duration: 0.5 }}
                 className="bg-white p-10 rounded-xl shadow-lg text-center flex flex-col items-center relative"
-                style={{ maxWidth: "80vw", width: "600px" }}
+                style={{ maxWidth: "80vw", width: "600px"}}
               >
                 <p className="text-xl font-semibold">{part.text}</p>
               </motion.div>}
@@ -78,8 +78,10 @@ export default function Home() {
 
               {/* text with no image background */}
               {!part.image && !part.header &&
-              <div>
-                <motion.div className="flex flex-col gap-4 p-20">
+              <div className="grid grid-cols-[1fr_1fr_1fr]">
+                <div>
+                </div>
+                <motion.div className="flex flex-col gap-5">
                   {/* looping through paragraphs for better aesthetics */}
                   {part.paragraph?.map((lines, idx) =>
                     {
