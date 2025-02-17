@@ -1,18 +1,9 @@
+/* eslint-disable */
 import { useState, useEffect} from "react";
-import { Geist, Geist_Mono } from "next/font/google";
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import Link from "next/link";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 export default function Home() {
 
   const story_info = [{id: 1, text:"In San Francisco, bakeries are more than bread–they are community.", image: "/bakery-outside.jpg", alt:"it&apos;s the outside of a bakery"}, 
