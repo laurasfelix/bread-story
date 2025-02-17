@@ -45,13 +45,13 @@ export default function Home() {
             <div key={index} ref={ref} className="w-screen h-screen flex justify-center items-center">
 
               {part.header && 
-              <motion.div className="relative z-20 p-4 left-1/4 grid grid-cols-[1fr_1fr_1fr] items-center">
+              <motion.div className="relative z-20 p-4 grid grid-cols-[1fr_1fr] items-center justify-center">
                   
-                <div>
+                <div className="items-center">
                   <Image src="/bread.png" alt="minecraft bread" width={400} height={400} />
                 </div>
              
-                <div className="flex items-center flex-col w-1/2">
+                <div className="flex items-center flex-col items-center justify-center">
                   <div className="text-xl font-bold bg-yellow-100">pain-demic (read this in french)</div>
                   <div className="bg-yellow-100"> 
                     by <Link href="/beatriz">beatriz aguiar</Link>,{" "}
@@ -76,9 +76,9 @@ export default function Home() {
 
 
               {/* text with no image background */}
-              {!part.image &&
-              <div className="p-20">
-                <motion.div className="flex flex-col gap-4">
+              {!part.image && !part.header &&
+              <div>
+                <motion.div className="flex flex-col gap-4 p-20">
                   {/* looping through paragraphs for better aesthetics */}
                   {part.paragraph?.map((lines, idx) =>
                     {
