@@ -15,7 +15,7 @@ export default function Home() {
     ], image:false},
     {text: "Over the past five years, the city has witnessed a shift in its bakery landscape. While specific numbers of openings and closures are not readily available, notable events include the closure of Bakers of Paris, a wholesale bakery that had served San Francisco for nearly four decades, in early 2020.", image_src: "/bakery-empty.jpg", alt:"it's an empty bakery", image: "true"},
     {text: "San Francisco is the beating heart of baking in the U.S. Since the Gold Rush, San Francisco sourdough put American bread on the map, its tangy flavor becoming integral to the city's identity. From historic institutions like Boudin to new artisans experimenting with heritage grains and global influences like Tartine, generations work to keep the baking culture alive.", image_src: "/bakery-newspaper.png", alt:"it's a bunch of articles for a bakery", image: "true" },
-    {text: "Despite challenges such as rising operational costs and competition from larger chains, San Francisco's bakery community continues to thrive, driven by innovation and a deep connection to the city's diverse neighborhoods.", image_src: "/bakery-full.jpeg", alt: "it's a full bakery", image: "true"},
+    {text: "Despite challenges such as rising operational costs and competition from larger chains, San Francisco's bakery community continues to thrive, driven by innovation and a deep connection to the city's diverse neighborhoods.", image_src: "/bakery-full.jpg", alt: "it's a full bakery", image: "true"},
     {text: "future?", image_src: "/bakery-future.png", alt: "it's a futuristic bakery", image: "true"},
   ];
 
@@ -43,7 +43,8 @@ export default function Home() {
 
           return (
             <div key={index} ref={ref} className="w-screen h-screen flex justify-center items-center">
-
+              
+              {/* title of the story*/}
               {part.header && 
               <motion.div className="relative z-20 p-4 grid grid-cols-[1fr_1fr] items-center justify-center">
                   
