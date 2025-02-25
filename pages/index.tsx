@@ -41,8 +41,8 @@ export default function Home() {
                   <Image src="/bread.png" alt="minecraft bread" width={400} height={400} />
                 </div>
              
-                <div className="flex items-center flex-col items-center justify-center">
-                  <div className="text-xl font-bold bg-yellow-100">pain-demic (read this in french)</div>
+                <div className="flex items-center flex-col items-center justify-center text-3xl">
+                  <div className="text-4xl font-bold bg-yellow-100">breaking bread</div>
                   <div className="bg-yellow-100"> 
                     by <Link href="/beatriz" className="">beatriz aguiar</Link>,{" "}
                     <Link href="/laura">laura félix</Link>,{" "}
