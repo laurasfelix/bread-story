@@ -9,14 +9,51 @@ export default function Home() {
 
   const story_info = [
     {header:true},
-    {text:"In San Francisco, bakeries are more than bread–they are community.", image: "true",image_src: "/bakery-outside.jpg", alt:"it's the outside of a bakery"}, 
-    {paragraph: ["During the pandemic, a new wave of bakers emerged, turning home kitchens into the beating heart of communities. ", 
-      "Gradually, small bakeries like Rize Up emerged to not only serve delicious bread, but serve the community. From backyard sourdough pop-ups to cultural bakeries reviving ancestral recipes, a tight-knit baking community has flourished, bound by a shared love for flour, fire, and fermentation. But as the city reopens and costs climb, these small bakers face an uncertain future. What started as a movement of resilience and connection is now a fight to keep independent baking alive in a place that’s always been shaped by those who feed it.",
+    {text:"Like many during the Covid-19 pandemic, Azikiwee Anderson began to bake sourdough. The zen process of perfecting his recipe to start a bakery often left Anderson with extra loaves. Rather than letting the bread go to waste or consuming it himself, Anderson would slip out of his house, warm loaves in hand, and leave them on the doorsteps of the older members of his neighborhood who often lived alone.",
+       image: "true",image_src: "/bakery-outside.jpg", alt:"it's the outside of a bakery"}, 
+    {paragraph: ["“It lights them up,” Anderson says.",
+      "Anderson started baking for himself, gradually baking for the neighborhood, and now bakes for a nation-wide community. However, the joy of sharing his bread, no matter the scale, remains the same. Similarly, Josey Baker, owner of Josey Baker Bread, fell in love with sourdough baking in his apartment, and eventually brought his bakery-cafe, a space that reflects the camaraderie of sharing bread, to life.",
+      '"There is something sort of magical about gifting someone a loaf of warm bread," says Baker.',
+      "These small bakeries are central to the culture of San Francisco. They do more than provide baked goods—they offer a place for the community to gather, offering warmth, comfort, and connection. Whether it's leaving a loaf on a neighbor's doorstep like Anderson, hosting local events like Baker or even taking care of their employees like Arnsdorff, these bakery owners use their craft to feed the body and the soul, strengthening the bonds that hold the city together."
     ], image:false},
-    {text: "Over the past five years, the city has witnessed a shift in its bakery landscape. While specific numbers of openings and closures are not readily available, notable events include the closure of Bakers of Paris, a wholesale bakery that had served San Francisco for nearly four decades, in early 2020.", image_src: "/bakery-empty.jpg", alt:"it's an empty bakery", image: "true"},
-    {text: "San Francisco is the beating heart of baking in the U.S. Since the Gold Rush, San Francisco sourdough put American bread on the map, its tangy flavor becoming integral to the city's identity. From historic institutions like Boudin to new artisans experimenting with heritage grains and global influences like Tartine, generations work to keep the baking culture alive.", image_src: "/bakery-newspaper.png", alt:"it's a bunch of articles for a bakery", image: "true" },
-    {text: "Despite challenges such as rising operational costs and competition from larger chains, San Francisco's bakery community continues to thrive, driven by innovation and a deep connection to the city's diverse neighborhoods.", image_src: "/bakery-full.jpg", alt: "it's a full bakery", image: "true"},
-    {text: "future?", image_src: "/bakery-future.png", alt: "it's a futuristic bakery", image: "true"},
+
+    {title: "The Rise/Feeding the Soul", paragraph: ["Anderson never saw himself making sourdough.",
+      "“I had never seen anyone that looked like me that was a baker so I just assumed that I couldn't really do it,” says Anderson.",
+      "Born in New Orleans and raised in the Bay Area, Anderson was a professional roller skater and a private chef before he ever thought of baking. It wasn’t until the pandemic hit that his journey in baking began. Encouraged by friends during the isolation of Covid-19, Anderson took up baking sourdough as a way to channel his energy and process his deep frustration with the state of the world.",
+      "“The murder of George Floyd really spun me out,” Anderson says. “The fact that every day you walk out might be your last for no apparent reason broke my heart and broke my brain.”",
+      "For months, Anderson was consumed by anger and despair. He either wanted to throw something at a wall or break down in tears. To cope, Anderson would retreat to his basement to work on his bread and himself.",
+      '"The act of bread-making made me very happy," Anderson says. "When I was doing it, everything else disappeared."',
+      'Day by day, Anderson started perfecting his sourdough recipe and gave out loaves to friends and neighbors. The simple act of sharing something he had created with his own hands gave him a sense of peace.',
+      'Gradually, Anderson’s small venture began to attract attention online. A follower from Brooklyn asked him to ship and sell his bread and opened the floodgates to his business.',
+      '“It was like a little Tamagotchi, which is very similar to your starter to begin with," he says. "You show it care and it doubles in size."',
+      `From the 10 loaves produced in his home soon expanded to more than 600 loaves daily in his current bakery, Anderson has since hired employees, rented out space and is working on a new bakery concept. Anderson's audience grew as well—from an initial 3,000 people to 28,000 followers—without spending a penny on advertising.`,
+      `In November 2023, tragedy struck when Rize Up was robbed, losing over $70,000 worth. However, the community that Anderson always showed up for, showed up for him too. Members of the community donated and other chefs showed up with food for his employees. That's when he knew he was on the right track. `,
+      '“When you know that what you do matters to people, and they show up for you, it makes it a lot easier to pick yourself up and dust yourself off and fight the good fight," he says.',
+      `For Anderson, it's not just about the bread, it's the connection it fosters. Sometimes, that connection is as simple as the knock on his door from a homeless neighbor in need of a loaf. “When I give them the bread and they say thank you,” Anderson says, “that might be what I really make today. That's what feeds my soul.”`,
+      `“I can make the world better one beautiful loaf of bread at a time,” Anderson says. “And I really believe that—whether it's employing people and making sure people are happy and feeling seen, donating to food insecurity, inspiring other people to raise money or donate their time or their energy to feed the homeless.”`,
+    ], image:false},
+    {title: "Leavening/Caring from Within", 
+      paragraph:[
+        `For three months, Lauren Arnsdorff and her husband Michael Eskenasy lived out of their car to cover the cost of running their bakery in San Francisco. `,
+        `“I don't think people realize how hard it is,” says Arnsdorff. “We were technically homeless. We were trying to get the business up and running, and at the same time, gave some of our employees raises, because it was so hard to keep good people. That was always our priority, so we just kind of have sacrificed so much to get here.”`,
+        `Growing up, Arnsdorff watched Ina Garten and Martha Stewart in her kitchen at breakfast time, mimicking their recipes in her free time. When she ran into some health concerns in her twenties, her doctor encouraged her to use all-natural ingredients in her baking, allowing her to enjoy her baked goods while taking care of her body. `,
+        `“I can create the best cookie available, but it has to be with the best ingredients possible,” says Arnsdorff.`,
+        `In 2020, Arnsdorff found herself out-of-work. She decided to pursue her passion project full time and start a bakery.`,
+        `“Because the pandemic, people need more reasons or more ways to connect with each other,” says Arnsdorff. “And for me, food has always been the connector.”`,
+        `Starting from her own kitchen, Arnsdorff gradually grew her team. `,
+      ],
+      image:false,
+    },
+    {title:"Gathering", 
+      paragraph:["With an online fanbase of over 50k, Josey Baker is a bread-fluencer.",
+
+      ],
+      image:false,
+    },
+    {text: "1", image_src: "/bakery-empty.jpg", alt:"it's an empty bakery", image: "true"},
+    {text: "2", image: "true", image_src: "/bakery-newspaper.png" },
+    {text: "3", image_src: "/bakery-full.jpg", alt: "it's a full bakery", image: "true"},
+    {text: "3", image_src: "/bakery-future.png", alt: "it's a futuristic bakery", image: "true"},
   ];
 
 
@@ -31,22 +68,24 @@ export default function Home() {
           
 
           return (
-            <div key={index} ref={ref} className="w-screen h-screen flex justify-center bg-cover items-center" style={{backgroundImage: `url('${part.image_src}')`}}>
+            <div key={index} ref={ref} className="w-screen flex justify-center bg-cover items-center p-2" style={{backgroundImage: `url('${part.image_src}')`}}>
               
               {/* title of the story*/}
               {part.header && 
-              <motion.div className="relative z-20 p-4 grid grid-cols-[1fr_1fr] items-center justify-center">
+      
+              <motion.div className="relative z-20 p-4 grid grid-cols-[1fr_2fr] items-center justify-center h-screen">
                   
-                <div className="items-center">
+                <div className="flex items-center justify-center">
                   <Image src="/bread.png" alt="minecraft bread" width={400} height={400} />
                 </div>
              
-                <div className="flex items-center flex-col items-center justify-center text-3xl">
-                  <div className="text-4xl font-bold bg-yellow-100">breaking bread</div>
-                  <div className="bg-yellow-100"> 
-                    by <Link href="/beatriz" className="">beatriz aguiar</Link>,{" "}
-                    <Link href="/laura">laura félix</Link>,{" "}
-                    <Link href="/zoe">zoe chao</Link>
+                <div className="flex items-center flex-col items-center justify-center text-3xl gap-2">
+                  <div className="text-4xl font-bold self-start">Breaking Bread: </div>
+                  <div className="text-4xl font-bold self-start"> Small bakeries in San Francisco shape community </div>
+                  <div className=""> 
+                    by <Link href="/beatriz" className="bg-amber-200">beatriz aguiar</Link>,{" "}
+                    <Link href="/laura" className="bg-blue-200">laura félix</Link>,{" "}
+                    <Link href="/zoe" className="bg-green-200">zoe chao</Link>
                   </div>
                 </div>
 
@@ -54,32 +93,43 @@ export default function Home() {
 
               }
               {/* text with image background */}
-              {part.image && <motion.div
+              {part.image && 
+              <div className="h-screen flex flex-col items-center text-center justify-center">
+                <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
                 transition={{ duration: 0.8 }}
-                className="bg-white p-10 rounded-xl shadow-lg text-center flex flex-col items-center relative"
+                className="bg-white p-10 rounded-xl shadow-lg relative"
                 style={{ maxWidth: "80vw", width: "600px"}}
               >
                 <p className="text-xl font-semibold">{part.text}</p>
-              </motion.div>}
+              </motion.div>
+              </div>}
 
 
               {/* text with no image background */}
               {!part.image && !part.header &&
-              <div className="grid grid-cols-[1fr_1fr_1fr]">
+              <div className="grid grid-cols-[1fr_1fr_1fr] w-screen">
                 <div>
                 </div>
-                <motion.div className="flex flex-col gap-5">
+                <motion.div>
                   {/* looping through paragraphs for better aesthetics */}
-                  {part.paragraph?.map((lines, idx) =>
-                    {
-                      return (
-                      <div key={idx}>
-                        <p className="text-left">{lines}</p>
-                      </div>);
-                    })
-                  }
+                  <div className="flex flex-col gap-2"> 
+                    <div className="font-bold text-xl">
+                      {part.title}
+                    </div>
+
+                    <div className="flex flex-col gap-5">
+                      {part.paragraph?.map((lines, idx) =>
+                        {
+                          return (
+                          <div key={idx}>
+                            <p className="text-left text-lg">{lines}</p>
+                          </div>);
+                        })
+                      }
+                      </div>
+                  </div>
                 </motion.div>
                
               </div>}
