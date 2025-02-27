@@ -5,18 +5,23 @@ import { motion } from 'framer-motion';
 import Link from "next/link";
 import Image from "next/image";
 
+import { Fira_Sans } from 'next/font/google'
+
+const FiraSans = Fira_Sans({subsets:[ 'latin'], weight:"400"})
+
 export default function Home() {
 
   const story_info = [
-    {header:true},
-    {text:"Like many during the Covid-19 pandemic, Azikiwee Anderson began to bake sourdough. The zen process of perfecting his recipe to start a bakery often left Anderson with extra loaves. Rather than letting the bread go to waste or consuming it himself, Anderson would slip out of his house, warm loaves in hand, and leave them on the doorsteps of the older members of his neighborhood who often lived alone.",
-       image: "true",image_src: "/bakery-outside.jpg", alt:"it's the outside of a bakery"}, 
+    {header:true, image_src:"first.jpg"},
+
+    // {text:"Like many during the Covid-19 pandemic, Azikiwee Anderson began to bake sourdough. The zen process of perfecting his recipe to start a bakery often left Anderson with extra loaves. Rather than letting the bread go to waste or consuming it himself, Anderson would slip out of his house, warm loaves in hand, and leave them on the doorsteps of the older members of his neighborhood who often lived alone.",
+    //    image: "true",image_src: "/bakery-outside.jpg", alt:"it's the outside of a bakery"}, 
     {paragraph: ["“It lights them up,” Anderson says.",
       "Anderson started baking for himself, gradually baking for the neighborhood, and now bakes for a nation-wide community. However, the joy of sharing his bread, no matter the scale, remains the same. Similarly, Josey Baker, owner of Josey Baker Bread, fell in love with sourdough baking in his apartment, and eventually brought his bakery-cafe, a space that reflects the camaraderie of sharing bread, to life.",
       '"There is something sort of magical about gifting someone a loaf of warm bread," says Baker.',
       "These small bakeries are central to the culture of San Francisco. They do more than provide baked goods—they offer a place for the community to gather, offering warmth, comfort, and connection. Whether it's leaving a loaf on a neighbor's doorstep like Anderson, hosting local events like Baker or even taking care of their employees like Arnsdorff, these bakery owners use their craft to feed the body and the soul, strengthening the bonds that hold the city together."
     ], image:false},
-
+    {text: "1", image_src: "/rize.jpeg", alt:"it's an empty bakery", image: "true"},
     {title: "The Rise/Feeding the Soul", paragraph: ["Anderson never saw himself making sourdough.",
       "“I had never seen anyone that looked like me that was a baker so I just assumed that I couldn't really do it,” says Anderson.",
       "Born in New Orleans and raised in the Bay Area, Anderson was a professional roller skater and a private chef before he ever thought of baking. It wasn’t until the pandemic hit that his journey in baking began. Encouraged by friends during the isolation of Covid-19, Anderson took up baking sourdough as a way to channel his energy and process his deep frustration with the state of the world.",
@@ -24,7 +29,7 @@ export default function Home() {
       "For months, Anderson was consumed by anger and despair. He either wanted to throw something at a wall or break down in tears. To cope, Anderson would retreat to his basement to work on his bread and himself.",
       '"The act of bread-making made me very happy," Anderson says. "When I was doing it, everything else disappeared."',
       'Day by day, Anderson started perfecting his sourdough recipe and gave out loaves to friends and neighbors. The simple act of sharing something he had created with his own hands gave him a sense of peace.',
-      'Gradually, Anderson’s small venture began to attract attention online. A follower from Brooklyn asked him to ship and sell his bread and opened the floodgates to his business.',
+      `Gradually, Anderson's small venture began to attract attention online. A follower from Brooklyn asked him to ship and sell his bread and opened the floodgates to his business.`,
       '“It was like a little Tamagotchi, which is very similar to your starter to begin with," he says. "You show it care and it doubles in size."',
       `From the 10 loaves produced in his home soon expanded to more than 600 loaves daily in his current bakery, Anderson has since hired employees, rented out space and is working on a new bakery concept. Anderson's audience grew as well—from an initial 3,000 people to 28,000 followers—without spending a penny on advertising.`,
       `In November 2023, tragedy struck when Rize Up was robbed, losing over $70,000 worth. However, the community that Anderson always showed up for, showed up for him too. Members of the community donated and other chefs showed up with food for his employees. That's when he knew he was on the right track. `,
@@ -32,6 +37,7 @@ export default function Home() {
       `For Anderson, it's not just about the bread, it's the connection it fosters. Sometimes, that connection is as simple as the knock on his door from a homeless neighbor in need of a loaf. “When I give them the bread and they say thank you,” Anderson says, “that might be what I really make today. That's what feeds my soul.”`,
       `“I can make the world better one beautiful loaf of bread at a time,” Anderson says. “And I really believe that—whether it's employing people and making sure people are happy and feeling seen, donating to food insecurity, inspiring other people to raise money or donate their time or their energy to feed the homeless.”`,
     ], image:false},
+    {text: "2", image: "true", image_src: "/flourbranch.jpeg" },
     {title: "Leavening/Caring from Within", 
       paragraph:[
         `For three months, Lauren Arnsdorff and her husband Michael Eskenasy lived out of their car to cover the cost of running their bakery in San Francisco. `,
@@ -44,16 +50,13 @@ export default function Home() {
       ],
       image:false,
     },
+    {text: "3", image_src: "/mill.jpeg", alt: "it's a full bakery", image: "true"},
     {title:"Gathering", 
       paragraph:["With an online fanbase of over 50k, Josey Baker is a bread-fluencer.",
 
       ],
       image:false,
     },
-    {text: "1", image_src: "/bakery-empty.jpg", alt:"it's an empty bakery", image: "true"},
-    {text: "2", image: "true", image_src: "/bakery-newspaper.png" },
-    {text: "3", image_src: "/bakery-full.jpg", alt: "it's a full bakery", image: "true"},
-    {text: "3", image_src: "/bakery-future.png", alt: "it's a futuristic bakery", image: "true"},
   ];
 
 
@@ -64,32 +67,39 @@ export default function Home() {
 
       <div className="relative z-10 flex flex-col items-center w-screen">
         {story_info.map((part, index) => {
-          const { ref, inView } = useInView({ threshold: 0.5, triggerOnce: false });
+          const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: false });
           
 
           return (
-            <div key={index} ref={ref} className="w-screen flex justify-center bg-cover items-center p-2" style={{backgroundImage: `url('${part.image_src}')`}}>
+            <div key={index} ref={ref} className="w-screen flex bg-cover items-center p-2" style={{backgroundImage: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center"}}>
               
               {/* title of the story*/}
               {part.header && 
-      
-              <motion.div className="relative z-20 p-4 grid grid-cols-[1fr_2fr] items-center justify-center h-screen">
-                  
-                <div className="flex items-center justify-center">
-                  <Image src="/bread.png" alt="minecraft bread" width={400} height={400} />
-                </div>
-             
-                <div className="flex items-center flex-col items-center justify-center text-3xl gap-2">
-                  <div className="text-4xl font-bold self-start">Breaking Bread: </div>
-                  <div className="text-4xl font-bold self-start"> Small bakeries in San Francisco shape community </div>
-                  <div className=""> 
-                    by <Link href="/beatriz" className="bg-amber-200">beatriz aguiar</Link>,{" "}
-                    <Link href="/laura" className="bg-blue-200">laura félix</Link>,{" "}
-                    <Link href="/zoe" className="bg-green-200">zoe chao</Link>
-                  </div>
-                </div>
 
-              </motion.div>
+              <div className="grid grid-rows-[0.5fr_4fr_4fr] h-screen">
+
+      
+                <motion.div className="relative z-20 pt-10" initial={{ opacity: 0, y: 100 }}
+                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
+                transition={{ duration: 0.5 }}>
+            
+                  {/* <div className="flex items-center justify-center">
+                    <Image src="/bread.png" alt="minecraft bread" width={250} height={250} />
+                  </div>
+               */}
+                  <div className="flex items-center flex-col items-center justify-center text-3xl gap-2 p-4 bg-amber-100 rounded-md border-2 border-stone-600" >
+                    <div className={`text-[2.30rem] font-black self-start text-red-800 drop-shadow-[0_1.0px_1.0px_rgba(0,0,0,1)] ${FiraSans.className}`}>BREAKING BREAD: </div>
+                    <div className={`text-[2.30rem] font-black self-start text-red-800 drop-shadow-[0_1.0px_1.0px_rgba(0,0,0,1)] ${FiraSans.className}`}> Small bakeries in San Francisco shape community </div>
+                    <div className={`self-start ${FiraSans.className}`}> 
+                      by <Link href="/beatriz" className="bg-red-700">beatriz aguiar</Link>,{" "}
+                      <Link href="/laura" className="bg-red-700">laura félix</Link>,{" "}
+                      <Link href="/zoe" className="bg-red-700">zoe chao</Link>
+                    </div>
+                  </div>
+            
+
+                </motion.div>
+              </div>
 
               }
               {/* text with image background */}
