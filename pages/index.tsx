@@ -105,9 +105,9 @@ export default function Home() {
                     className="bg-stone-100 p-10 rounded-xl shadow-lg w-full"
                     style={{ maxWidth: "120vw"}}
                   >
-                    <div className="font-bold text-xl ">{part.story.title}</div>
+                    <div className="font-bold text-xl ">{part.story?.title}</div>
                     <div className="flex flex-wrap gap-5 mt-4">
-                      {part.story.paragraph?.map((lines, idx) => (
+                      {part.story?.paragraph?.map((lines, idx) => (
                         <div key={idx}>
                           <p className="text-left text-lg">{lines}</p>
                         </div>
