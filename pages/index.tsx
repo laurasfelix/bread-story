@@ -126,11 +126,11 @@ export default function Home() {
                   {/* looping through paragraphs for better aesthetics */}
                   <div className="flex flex-col gap-2"> 
                     <div className="font-bold text-xl">
-                      {part.title}
+                      {part?.title}
                     </div>
 
                     <div className="flex flex-col gap-5">
-                      {part.paragraph?.map((lines, idx) =>
+                      {part?.paragraph?.map((lines, idx) =>
                         {
                           return (
                           <div key={idx}>
