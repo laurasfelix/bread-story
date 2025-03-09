@@ -12,7 +12,7 @@ const FiraSans = Fira_Sans({subsets:[ 'latin'], weight:"400"})
 export default function Home() {
 
   const story_info = [
-    {header:true, image_src:""},
+    {header:true, image_src:"/first.jpg"},
     {paragraph: ["“It lights them up,” Anderson says.",
       "Anderson started baking for himself, gradually baking for the neighborhood, and now bakes for a nation-wide community. However, the joy of sharing his bread, no matter the scale, remains the same. Similarly, Josey Baker, owner of Josey Baker Bread, fell in love with sourdough baking in his apartment, and eventually brought his bakery-cafe, a space that reflects the camaraderie of sharing bread, to life.",
       '"There is something sort of magical about gifting someone a loaf of warm bread," says Baker.',
@@ -71,13 +71,13 @@ export default function Home() {
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
                 transition={{ duration: 0.5 }}>
             
-                  <div className="flex items-center flex-col items-center justify-center text-3xl gap-2 p-4 bg-amber-100 rounded-md border-2 border-stone-600" >
-                    <div className={`text-[2.30rem] font-black self-start text-red-800 drop-shadow-[0_1.0px_1.0px_rgba(0,0,0,1)] ${FiraSans.className}`}>BREAKING BREAD: </div>
-                    <div className={`text-[2.30rem] font-black self-start text-red-800 drop-shadow-[0_1.0px_1.0px_rgba(0,0,0,1)] ${FiraSans.className}`}> Small bakeries in San Francisco shape community </div>
+                  <div className="flex items-center flex-col items-center justify-center text-3xl gap-2 p-4 bg-orange-200 rounded-md border-2 border-orange-800" >
+                    <div className={`text-[2.30rem] font-black self-start text-orange-800 drop-shadow-[0_1.0px_1.0px_rgba(0,0,0,1)] ${FiraSans.className}`}>BREAKING BREAD: </div>
+                    <div className={`text-[2.30rem] font-black self-start text-orange-800 drop-shadow-[0_1.0px_1.0px_rgba(0,0,0,1)] ${FiraSans.className}`}> Small bakeries in San Francisco shape community </div>
                     <div className={`self-start ${FiraSans.className}`}> 
-                      by <Link href="/beatriz" className="bg-red-700">beatriz aguiar</Link>,{" "}
-                      <Link href="/laura" className="bg-red-700">laura félix</Link>,{" "}
-                      <Link href="/zoe" className="bg-red-700">zoe chao</Link>
+                      by <Link href="/beatriz" className="bg-orange-300">beatriz aguiar</Link>,{" "}
+                      <Link href="/laura" className="bg-orange-300">laura félix</Link>,{" "}
+                      <Link href="/zoe" className="bg-orange-300">zoe chao</Link>
                     </div>
                   </div>
             
