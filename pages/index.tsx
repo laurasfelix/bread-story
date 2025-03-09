@@ -1,9 +1,10 @@
 /* eslint-disable */
-import { useState, useEffect} from "react";
+import { useState, useRef, useEffect} from "react";
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import Link from "next/link";
 import Image from "next/image";
+import HorizontalScroll from "@/components/HorizontalScroll";
 
 import { Fira_Sans } from 'next/font/google'
 
@@ -53,13 +54,13 @@ export default function Home() {
     <div className="relative w-screen min-h-screen">
 
 
-      <div className="relative z-10 flex flex-col items-center w-screen">
+      <div className="relative z-10 flex flex-col items-center w-screen" >
         {story_info.map((part, index) => {
           const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: false });
           
 
           return (
-            <div key={index} ref={ref} className="w-screen flex bg-cover items-center p-2 gap-4" style={{backgroundImage: part.image? undefined: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center"}}>
+            <div key={index} ref={ref} className="w-screen flex bg-cover items-center p-2 gap-4" style={{backgroundImage: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center"}}>
               
               {/* title of the story*/}
               {part.header && 
@@ -88,13 +89,19 @@ export default function Home() {
               }
               {/* text with image background */}
               {part.image && (
-              <div className="flex overflow-x-auto w-screen h-screen">
+                <HorizontalScroll>
+       
                 {/* Image panel */}
-                <div className="flex-shrink-0 w-screen h-screen">
-                  <img 
-                    src={part.image_src} 
-                    className="object-cover w-full h-full" 
-                  />
+                <div className="flex-shrink-0 w-screen h-screen items-center justify-center flex">
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
+                    transition={{ duration: 0.8 }}
+                    className="bg-orange-100 p-10 rounded-xl shadow-lg w-full"
+                    style={{ maxWidth: "60vw"}}
+                  >
+                  <div className="font-bold text-xl text-center">{part.story?.title}</div>
+                  </motion.div>
                 </div>
                 {/* Text panel */}
                 <div className="flex-shrink-0 w-screen min-h-screen p-10 flex items-center justify-center overflow-y-auto">
@@ -102,10 +109,10 @@ export default function Home() {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="bg-stone-100 p-10 rounded-xl shadow-lg w-full"
+                    className="bg-orange-100 p-10 rounded-xl shadow-lg w-full"
                     style={{ maxWidth: "120vw"}}
                   >
-                    <div className="font-bold text-xl ">{part.story?.title}</div>
+                  
                     <div className="flex flex-wrap gap-5 mt-4">
                       {part.story?.paragraph?.map((lines, idx) => (
                         <div key={idx}>
@@ -115,7 +122,8 @@ export default function Home() {
                     </div>
                   </motion.div>
                 </div>
-              </div>
+         
+              </HorizontalScroll>
             )}
                           {/* text with no image background */}
               {!part.image && !part.header &&
