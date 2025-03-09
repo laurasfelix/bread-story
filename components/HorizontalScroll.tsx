@@ -1,6 +1,9 @@
 import { useRef, useEffect } from "react";
+interface HorizontalScrollProps {
+  children: ReactNode;
+}
 
-export default function HorizontalScroll({ children }) {
+export default function HorizontalScroll({ children }: HorizontalScrollProps) {
   const scrollRef = useRef(null);
 
   useEffect(() => {
