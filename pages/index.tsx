@@ -35,16 +35,15 @@ export default function Home() {
         `In 2020, Arnsdorff found herself out-of-work. She decided to pursue her passion project full time and start a bakery.`,
         `“Because the pandemic, people need more reasons or more ways to connect with each other,” says Arnsdorff. “And for me, food has always been the connector.”`,
         `Starting from her own kitchen, Arnsdorff gradually grew her team. `,
-      ],
+      ]
      
     }},
-    ,
     {text: "3", image_src: "/mill.jpeg", alt: "it's a full bakery", image: "true", story: {title:"Gathering", 
       paragraph:["With an online fanbase of over 50k, Josey Baker is a bread-fluencer.",
 
-      ],
+      ]
    
-    }},
+    }}
     
   ];
 
