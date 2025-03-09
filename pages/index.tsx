@@ -24,15 +24,7 @@ export default function Home() {
       "“The murder of George Floyd really spun me out,” Anderson says. “The fact that every day you walk out might be your last for no apparent reason broke my heart and broke my brain.”",
       "For months, Anderson was consumed by anger and despair. He either wanted to throw something at a wall or break down in tears. To cope, Anderson would retreat to his basement to work on his bread and himself.",
       '"The act of bread-making made me very happy," Anderson says. "When I was doing it, everything else disappeared."',
-      'Day by day, Anderson started perfecting his sourdough recipe and gave out loaves to friends and neighbors. The simple act of sharing something he had created with his own hands gave him a sense of peace.',
-      `Gradually, Anderson's small venture began to attract attention online. A follower from Brooklyn asked him to ship and sell his bread and opened the floodgates to his business.`,
-      '“It was like a little Tamagotchi, which is very similar to your starter to begin with," he says. "You show it care and it doubles in size."',
-      `From the 10 loaves produced in his home soon expanded to more than 600 loaves daily in his current bakery, Anderson has since hired employees, rented out space and is working on a new bakery concept. Anderson's audience grew as well—from an initial 3,000 people to 28,000 followers—without spending a penny on advertising.`,
-      `In November 2023, tragedy struck when Rize Up was robbed, losing over $70,000 worth. However, the community that Anderson always showed up for, showed up for him too. Members of the community donated and other chefs showed up with food for his employees. That's when he knew he was on the right track. `,
-      '“When you know that what you do matters to people, and they show up for you, it makes it a lot easier to pick yourself up and dust yourself off and fight the good fight," he says.',
-      `For Anderson, it's not just about the bread, it's the connection it fosters. Sometimes, that connection is as simple as the knock on his door from a homeless neighbor in need of a loaf. “When I give them the bread and they say thank you,” Anderson says, “that might be what I really make today. That's what feeds my soul.”`,
-      `“I can make the world better one beautiful loaf of bread at a time,” Anderson says. “And I really believe that—whether it's employing people and making sure people are happy and feeling seen, donating to food insecurity, inspiring other people to raise money or donate their time or their energy to feed the homeless.”`,
-    ]},},
+    ]}},
    
     {text: "2", image: "true", image_src: "/flourbranch.jpeg", story: {title: "Leavening/Caring from Within", 
       paragraph:[
@@ -52,7 +44,7 @@ export default function Home() {
 
       ],
    
-    },},
+    }},
     
   ];
 
@@ -97,38 +89,36 @@ export default function Home() {
               }
               {/* text with image background */}
               {part.image && (
-  <div className="flex overflow-x-auto w-screen h-screen">
-    {/* Image panel */}
-    <div className="flex-shrink-0 w-screen h-screen">
-      <img 
-        src={part.image_src} 
-        className="object-cover w-full h-full" 
-      />
-    </div>
-    {/* Text panel */}
-    <div className="flex-shrink-0 w-screen min-h-screen p-10 flex items-center justify-center overflow-y-auto">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
-        transition={{ duration: 0.8 }}
-        className="bg-stone-100 p-10 rounded-xl shadow-lg w-full"
-        style={{ maxWidth: "120vw"}}
-      >
-        <div className="font-bold text-xl ">{part.story.title}</div>
-        <div className="flex flex-wrap gap-5 mt-4">
-          {part.story.paragraph?.map((lines, idx) => (
-            <div key={idx}>
-              <p className="text-left text-lg">{lines}</p>
-            </div>
-          ))}
-        </div>
-      </motion.div>
-    </div>
-  </div>
-)}
-
-
-              {/* text with no image background */}
+              <div className="flex overflow-x-auto w-screen h-screen">
+                {/* Image panel */}
+                <div className="flex-shrink-0 w-screen h-screen">
+                  <img 
+                    src={part.image_src} 
+                    className="object-cover w-full h-full" 
+                  />
+                </div>
+                {/* Text panel */}
+                <div className="flex-shrink-0 w-screen min-h-screen p-10 flex items-center justify-center overflow-y-auto">
+                  <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
+                    transition={{ duration: 0.8 }}
+                    className="bg-stone-100 p-10 rounded-xl shadow-lg w-full"
+                    style={{ maxWidth: "120vw"}}
+                  >
+                    <div className="font-bold text-xl ">{part.story.title}</div>
+                    <div className="flex flex-wrap gap-5 mt-4">
+                      {part.story.paragraph?.map((lines, idx) => (
+                        <div key={idx}>
+                          <p className="text-left text-lg">{lines}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </motion.div>
+                </div>
+              </div>
+            )}
+                          {/* text with no image background */}
               {!part.image && !part.header &&
               <div className="grid grid-cols-[1fr_1fr_1fr] w-screen">
                 <div>
