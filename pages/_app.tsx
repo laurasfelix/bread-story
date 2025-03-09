@@ -6,7 +6,7 @@ const cormorant = Cormorant({subsets:[ 'latin']})
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-  <main className={`${cormorant.className} bg-orange-300`}>
+  <main className={`${cormorant.className} bg-orange-100`}>
     <Component {...pageProps} />
   </main>);
 }

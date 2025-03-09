@@ -68,7 +68,7 @@ export default function Home() {
           
 
           return (
-            <div key={index} ref={ref} className="w-screen flex bg-cover items-center p-2 gap-4" style={{backgroundImage: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center"}}>
+            <div key={index} ref={ref} className="w-screen flex bg-cover items-center p-2 gap-4" style={{backgroundImage: part.image? undefined: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center"}}>
               
               {/* title of the story*/}
               {part.header && 
@@ -96,50 +96,36 @@ export default function Home() {
 
               }
               {/* text with image background */}
-              {part.image && 
-              <div className="h-screen flex flex-row items-center text-center justify-center">
-              <div className="h-screen w-screen flex flex-col items-center text-center justify-center">
-                <motion.div
-                initial={{ opacity: 0, y: 50 }}
-                animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
-                transition={{ duration: 0.8 }}
-                className="bg-white p-10 rounded-xl shadow-lg relative"
-                style={{ maxWidth: "80vw", width: "600px"}}
-              >
-                <p className="text-xl font-semibold">{part.text}</p>
-              </motion.div>
-              </div>
-
-              {/* text following image*/}
-              {
-                <div className="flex flex-row w-screen h-screen">
-                
-                  <motion.div>
-                    {/* looping through paragraphs for better aesthetics */}
-                    <div className="flex flex-col gap-2"> 
-                      <div className="font-bold text-xl">
-                        {part.story.title}
-                      </div>
-  
-                      <div className="flex flex-col gap-5">
-                        {part.story.paragraph?.map((lines, idx) =>
-                          {
-                            return (
-                            <div key={idx}>
-                              <p className="text-left text-lg">{lines}</p>
-                            </div>);
-                          })
-                        }
-                        </div>
-                    </div>
-                  </motion.div>
-                 
-                </div>}
-
-                </div>
-              
-              
-              }
+              {part.image && (
+  <div className="flex overflow-x-auto w-screen h-screen">
+    {/* Image panel */}
+    <div className="flex-shrink-0 w-screen h-screen">
+      <img 
+        src={part.image_src} 
+        className="object-cover w-full h-full" 
+      />
+    </div>
+    {/* Text panel */}
+    <div className="flex-shrink-0 w-screen min-h-screen p-10 flex items-center justify-center overflow-y-auto">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
+        transition={{ duration: 0.8 }}
+        className="bg-stone-100 p-10 rounded-xl shadow-lg w-full"
+        style={{ maxWidth: "120vw"}}
+      >
+        <div className="font-bold text-xl ">{part.story.title}</div>
+        <div className="flex flex-wrap gap-5 mt-4">
+          {part.story.paragraph?.map((lines, idx) => (
+            <div key={idx}>
+              <p className="text-left text-lg">{lines}</p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+    </div>
+  </div>
+)}
 
 
               {/* text with no image background */}
