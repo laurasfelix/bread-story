@@ -49,7 +49,7 @@ export default function Home() {
         `For three months, Lauren Arnsdorff and her husband Michael Eskenasy lived out of their car to cover the cost of running their bakery in San Francisco.`,
         `“I don't think people realize how hard it is,” says Arnsdorff. “We were technically homeless. We were trying to get the business up and running, and at the same time, gave some of our employees raises, because it was so hard to keep good people.”`,
 
-        `Arnsdorff and Eskenasy may have sacrificed for their bakery, Flour & Branch, but they would do it all over again.  Growing up, Arnsdorff watched Ina Garten and Martha Stewart in her kitchen at breakfast time, mimicking their recipes in her free time. When she ran into some health concerns in her twenties, her doctor encouraged her to use all-natural ingredients in her baking, allowing her to enjoy her baked goods while taking care of her body.,` 
+        `Arnsdorff and Eskenasy may have sacrificed for their bakery, Flour & Branch, but they would do it all over again.  Growing up, Arnsdorff watched Ina Garten and Martha Stewart in her kitchen at breakfast time, mimicking their recipes in her free time. When she ran into some health concerns in her twenties, her doctor encouraged her to use all-natural ingredients in her baking, allowing her to enjoy her baked goods while taking care of her body.`, 
 
      `“I can create the best cookie available, but it has to be with the best ingredients possible,” Arnsdorff said.`,
 
