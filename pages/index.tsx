@@ -73,12 +73,12 @@ export default function Home() {
                 transition={{ duration: 0.5 }}>
             
                   <div className="flex items-center flex-col items-center justify-center text-3xl gap-2 p-4 bg-orange-200 rounded-md border-2 border-orange-800" >
-                    <div className={`text-[2.30rem] font-black self-start text-orange-800 drop-shadow-[0_1.0px_1.0px_rgba(0,0,0,1)] ${FiraSans.className}`}>BREAKING BREAD: </div>
-                    <div className={`text-[2.30rem] font-black self-start text-orange-800 drop-shadow-[0_1.0px_1.0px_rgba(0,0,0,1)] ${FiraSans.className}`}> Small bakeries in San Francisco shape community </div>
-                    <div className={`self-start ${FiraSans.className}`}> 
-                      by <Link href="/beatriz" className="bg-orange-300">beatriz aguiar</Link>,{" "}
-                      <Link href="/laura" className="bg-orange-300">laura félix</Link>,{" "}
-                      <Link href="/zoe" className="bg-orange-300">zoe chao</Link>
+                    <div className={`text-[2.30rem] font-black self-start text-orange-800 drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,1)]`}>BREAKING BREAD: </div>
+                    <div className={`text-[2.30rem] font-black self-start text-orange-800 drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,1)]`}> Small bakeries in San Francisco shape community </div>
+                    <div className={`self-start`}> 
+                      by <Link href="/beatriz" className="bg-orange-300 font-bold">beatriz aguiar</Link>,{" "}
+                      <Link href="/laura" className="bg-orange-300 font-bold">laura félix</Link>,{" "}
+                      <Link href="/zoe" className="bg-orange-300 font-bold">zoe chao</Link>
                     </div>
                   </div>
             
