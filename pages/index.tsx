@@ -82,7 +82,7 @@ export default function Home() {
       ]
      
     }},
-    {text: "3", image_src: "/mill.jpeg", alt: "it's a full bakery", image: "true", story: {title:"Gathering", 
+    {text: "3", image_src: "/mill.jpeg", alt: "it's a full bakery", image: "true", story: {title:"Gathering Around the Table", 
       paragraph:[[
 
         `At the center of The Mill, a bakery-cafe, is a large wooden communal table.`,
@@ -121,8 +121,8 @@ export default function Home() {
 
     {image: false, icon_part:true, icons:[
       {image_src:"/rize.png", name:"RizeUp Bakery", hours:"Monday - Friday 7am to 3pm", phone:"415-964-4706", link:"https://rizeupsourdough.com/", email:"", text:"RizeUp Bakery is a Black-owned wholesale bakery transforming traditional sourdough with cultural influences around the world. RizeUp’s bread can be found at local supermarkets across San Francisco and pre-ordered online.", address:"1160 Howard St, San Francisco, CA 94103"},
-      {image_src:"/mill.png", name:"The Mill", hours:"Open Everyday from 7am - 5pm", phone:"415 345-1953", link:"https://themillsf.com", email:"info@themillsf.com", text:"The Mill is a partnership between Four Barrel Coffee and Josey Baker Bread serving up whole grain sourdough made with flour milled in-house and hand-roasted coffee.", address:"736 Divisadero Street, San Francisco, CA 94117"},
       {image_src:"/flour.png", name:"Flour & Branch", hours:"Monday-Friday from 8:30-2:30, or until sold out Saturday from 10-2:30", phone:"(415) 658-7217", link:"https://www.flourandbranch.com/", email:"info@flourandbranch.com", text:"Flour & Branch is a female-owned bakery specializing in coffee, cookies and baked goods made with all natural ingredients. They also offerbrunch service on Saturdays and are available for catering.", address:"493 3rd St, San Francisco, CA 94107"},
+      {image_src:"/mill.png", name:"The Mill", hours:"Open Everyday from 7am - 5pm", phone:"415 345-1953", link:"https://themillsf.com", email:"info@themillsf.com", text:"The Mill is a partnership between Four Barrel Coffee and Josey Baker Bread serving up whole grain sourdough made with flour milled in-house and hand-roasted coffee.", address:"736 Divisadero Street, San Francisco, CA 94117"},
     ]
   }
     
@@ -140,7 +140,7 @@ export default function Home() {
           
 
           return (
-            <div key={index} ref={ref} className="w-screen flex bg-cover items-center p-2" style={{backgroundImage: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center"}}>
+            <div key={index} ref={ref} className="w-screen flex bg-cover items-center p-2" style={{backgroundImage: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center", "alignItems": part.icon_part ? "center" : undefined}}>
               
               {/* title of the story*/}
               {part.header && 
@@ -148,7 +148,7 @@ export default function Home() {
               <div className="grid grid-rows-[0.5fr_4fr_4fr] h-screen">
 
       
-                <motion.div className="relative z-20 pt-10" initial={{ opacity: 0, y: 100 }}
+                <motion.div className="relative z-20 pt-10" initial={{ opacity: 0, y: -400 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
                 transition={{ duration: 1 }}>
             
@@ -212,7 +212,7 @@ export default function Home() {
          
               </HorizontalScroll>
             )}
-                          {/* text with no image background */}
+              {/* text with no image background */}
               {!part.image && !part.header &&
               <div className="grid grid-cols-[1fr_1fr_1fr] w-screen">
                 <div>
@@ -241,7 +241,24 @@ export default function Home() {
                
               </div>}
 
+            
+            {/* icons below */}
+            {part.icon_part &&
+              <div className="flex flex-row items-start justify-center self-center min-w-full h-screen">
+                {part.icons?.map((icon, inx) =>
+                (
+                  <div key={inx}  className="flex flex-col items-center justify-center hover:scale-125">
+                    <Link href={icon.link}> <img src={`${icon.image_src}`} className="object-contain h-96 w-auto" /> </Link>
+                  </div>
+                ))
+                
+                }
+              </div>
+              }
+
             </div>
+
+            
           );
         })}
       </div>
