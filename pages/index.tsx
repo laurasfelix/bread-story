@@ -221,6 +221,11 @@ export default function Home() {
                   {/* looping through paragraphs for better aesthetics */}
                   <div className="flex flex-col gap-2"> 
 
+                    {part.section_title && 
+                    <div className="flex flex-col p-2">
+                      <p className="font-bold text-xl text-center"> {part.section_title} </p>
+                    </div>}
+
                     <div className="flex flex-col gap-5">
                       {part?.paragraph?.map((lines, idx) =>
                         {
