@@ -11,7 +11,7 @@ export default function HorizontalScroll({ children }: HorizontalScrollProps) {
     const scrollContainer = scrollRef.current;
     if (!scrollContainer) return;
   
-    const onWheel = (e) => {
+    const onWheel = (e: WheelEvent) => {
       const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
       if (
         (e.deltaY < 0 && scrollContainer.scrollLeft === 0) ||
