@@ -21,7 +21,7 @@ export default function Home() {
         `“There is something sort of magical about gifting someone a loaf of warm bread,” said Josey Baker, the owner of another San Francisco bakery, Josey Baker Bread. Like Anderson, Baker fell in love with sourdough while baking in his apartment and eventually opened The Mill, a bakery-cafe in Hayes Valley.`,
         `Bakeries have long been central to the culture of San Francisco. From the 1849 Gold Rush when French immigrants started Boudin Bakery to the sensationalization of San Francisco-born Tartine across the world, bakeries have brought the community together. The pandemic, however, sharpened some residents’ desire for spaces of community gathering — places offering warmth, comfort and connection. In a difficult political and economic landscape — with waves of layoffs and the closure of longtime bread wholesaler Bakers of Paris — some small bakeries have also provided for employees in ways that large corporations have not.`, 
     ], image:false},
-    {text: "1", image_src: "/rize.jpeg", alt:"it's an empty bakery", image: "true", story:  {title: "The Rise/Feeding the Soul", paragraph: [[
+    {text: "1", image_src: "/rize.jpeg", alt:"it's an empty bakery", image: "true", story:  {title: "Feeding the Soul", paragraph: [[
       `Prior to COVID, Anderson never saw himself making sourdough.`,
       `“I had never seen anyone that looked like me that was a baker, so I just assumed that I couldn't really do it,” Anderson said.`,
       `Growing up Black in New Orleans and the Bay Area, Anderson was a professional roller skater and a private chef before he ever thought of baking. It wasn’t until the pandemic hit that his journey in baking began. Encouraged by friends during the isolation of Covid-19, Anderson took up baking sourdough as a way to channel his energy and process his deep frustration with the state of the world.`,
@@ -44,7 +44,7 @@ export default function Home() {
     
     ]}},
    
-    {text: "2", image: "true", image_src: "/flourbranch.jpeg", story: {title: "Leavening/Caring from Within", 
+    {text: "2", image: "true", image_src: "/flourbranch.jpeg", story: {title: "Caring from Within", 
       paragraph:[[
         `For three months, Lauren Arnsdorff and her husband Michael Eskenasy lived out of their car to cover the cost of running their bakery in San Francisco.`,
         `“I don't think people realize how hard it is,” says Arnsdorff. “We were technically homeless. We were trying to get the business up and running, and at the same time, gave some of our employees raises, because it was so hard to keep good people.”`,
