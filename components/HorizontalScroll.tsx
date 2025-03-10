@@ -4,12 +4,12 @@ interface HorizontalScrollProps {
 }
 
 export default function HorizontalScroll({ children }: HorizontalScrollProps) {
-  const scrollRef = useRef(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     // defining scroll container
-    const scrollContainer = scrollRef.current;
-    if (!scrollContainer) return;
+    if (scrollRef === null) return;
+    const scrollContainer = scrollRef.current!;
   
     const onWheel = (e: WheelEvent) => {
       const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
