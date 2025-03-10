@@ -70,28 +70,34 @@ export default function Home() {
 
         `In early 2020, Arnsdorff found herself laid-off from her corporate finance role and quarantined at home. She decided that it was the perfect time to pursue her passion and incorporated Flour & Branch.`,
 
-`“Because of the pandemic, people need more reasons or more ways to connect with each other,” Arnsdorff said. “And for me, food has always been the connector.”`,
 
-`Arnsdorff first built her community nationally through a shipping business in October 2020. She made nearly 200 iterations of each cookie and rented out a 200 square foot kitchen. As her cookies grew in popularity, appearing in national publications like FoodNetwork and Forbes, she hired more staff and rented out a larger space to accommodate.`, 
 
 
       ], [
-        `However, San Francisco’s COVID protocols delayed Flour & Branch’s operations. Even though Arnsdorff worked closely with the health inspector to ensure the health and safety of her employees, implementing various COVID protocols led to delays and setbacks in the operations of the bakery.`, 
+        `“Because of the pandemic, people need more reasons or more ways to connect with each other,” Arnsdorff said. “And for me, food has always been the connector.”`,
+        `Arnsdorff first built her community nationally through a shipping business in October 2020. She made nearly 200 iterations of each cookie and rented out a 200 square foot kitchen. As her cookies grew in popularity, appearing in national publications like FoodNetwork and Forbes, she hired more staff and rented out a larger space to accommodate.`, 
 
-`“It's really hard because you can't just say, ‘Oh well, it's okay.’ You really have to take the hit,” says Arnsdroff. “I’m trying to navigate that and be strong for my employees, but I'm terrified.”`,
+      
+
 
 
       ],[
-        ` After Arnsdorff persevered through the first two years, Arnsdorff’s husband Michael Eskenasy joined her team as the Chief Operating Officer of the bakery. With his help, Arnsdorff and Eskenasy opened the doors to their storefront in December of 2021, selling cookies, pastries, brunch and beverages.`, 
-        `“I just want to make it better a little bit each day,” says Arnsdroff. “In the process of that, [the bakery] became the space that people just want to spend time in.”`,
+        `However, San Francisco’s COVID protocols delayed Flour & Branch’s operations. Even though Arnsdorff worked closely with the health inspector to ensure the health and safety of her employees, implementing various COVID protocols led to delays and setbacks in the operations of the bakery.`, 
+        `“It's really hard because you can't just say, ‘Oh well, it's okay.’ You really have to take the hit,” says Arnsdroff. “I’m trying to navigate that and be strong for my employees, but I'm terrified.”`,
+       
+       
       ],
       [
+        ` After Arnsdorff persevered through the first two years, Arnsdorff’s husband Michael Eskenasy joined her team as the Chief Operating Officer of the bakery. With his help, Arnsdorff and Eskenasy opened the doors to their storefront in December of 2021, selling cookies, pastries, brunch and beverages.`, 
+        `“I just want to make it better a little bit each day,” says Arnsdroff. “In the process of that, [the bakery] became the space that people just want to spend time in.”`,
 
+
+
+
+      ],[
+        
 `While Flour & Branch has garnered a regular customer base, Arnsdorff and Eskenasy are still working in the grassroots, bringing extra goods to concierges at hotels and leaving food at offices in the neighborhood to generate more visibility in the neighborhood post-COVID. Ensuring welfare among their employee family is often difficult, Arnsdorff said.`,
-
-`“You honestly feel like you're dying every day,” says Arnsdorff. “But it's fulfilling. I would never change it. I would do it all over again.”`,
-
-      ]
+`“You honestly feel like you're dying every day,” says Arnsdorff. “But it's fulfilling. I would never change it. I would do it all over again.”`,]
       
       ]
      
