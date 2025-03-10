@@ -214,7 +214,7 @@ export default function Home() {
             )}
               {/* text with no image background */}
               {!part.image && !part.header &&
-              <div className="grid grid-cols-[1fr_1fr_1fr] w-screen">
+              <div className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 w-screen">
                 <div>
                 </div>
                 <motion.div>
