@@ -55,11 +55,11 @@ export default function Home() {
 
       ], [
 
-        `In early 2020, Arnsdorff found herself laid-off from her corporate finance role and quarantined at home. She decided that it was the perfect time to pursue her passion and incorporated Flour & Branch.,`
+        `In early 2020, Arnsdorff found herself laid-off from her corporate finance role and quarantined at home. She decided that it was the perfect time to pursue her passion and incorporated Flour & Branch.`,
 
 `“Because of the pandemic, people need more reasons or more ways to connect with each other,” Arnsdorff said. “And for me, food has always been the connector.”`,
 
-`Arnsdorff first built her community nationally through a shipping business in October 2020. She made nearly 200 iterations of each cookie and rented out a 200 square foot kitchen. As her cookies grew in popularity, appearing in national publications like FoodNetwork and Forbes, she hired more staff and rented out a larger space to accommodate.,` 
+`Arnsdorff first built her community nationally through a shipping business in October 2020. She made nearly 200 iterations of each cookie and rented out a 200 square foot kitchen. As her cookies grew in popularity, appearing in national publications like FoodNetwork and Forbes, she hired more staff and rented out a larger space to accommodate.`, 
 
 `However, San Francisco’s COVID protocols delayed Flour & Branch’s operations. Even though Arnsdorff worked closely with the health inspector to ensure the health and safety of her employees, implementing various COVID protocols led to delays and setbacks in the operations of the bakery.`, 
 
