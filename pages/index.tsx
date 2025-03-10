@@ -216,7 +216,7 @@ export default function Home() {
                 {/* Image panel */}
                 <div className="flex-shrink-0 w-screen h-screen items-center justify-center flex">
                 <motion.div
-                    initial={{ opacity: 0, x: -600, y:-400 }}
+                    initial={{ opacity: 0, x: -600, y:-0 }}
                     animate={inView ? { opacity: 1, x: -70,y:0 } : { opacity: 0 }}
                     transition={{ duration: 0.8 }}
                     className="bg-orange-100 p-10 rounded-xl shadow-lg w-full border-4 border-stone-800" 
