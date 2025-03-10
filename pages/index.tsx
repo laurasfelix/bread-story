@@ -153,6 +153,17 @@ export default function Home() {
     
   ];
 
+  let audio: HTMLAudioElement | null = null;
+
+  const playAudio = () => {
+    console.log("doing?")
+    if (!audio || audio.paused) {
+      audio = new Audio(`/bread.mp3`);
+      audio.volume = 0.5;
+      audio.play();
+   
+  }}
+
   const [choice, setChoice] = useState(-1);
 
   const handleClick = (idx: number) => {
@@ -181,7 +192,7 @@ export default function Home() {
 
 
   return (
-    <div className="relative w-screen min-h-screen">
+    <div onClick={()=> playAudio()} className="relative w-screen min-h-screen">
 
 
       <div className="relative z-10 flex flex-col items-center w-screen gap-16">
