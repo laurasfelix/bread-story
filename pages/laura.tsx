@@ -8,19 +8,19 @@ export default function Laura(){
 
             <div className="grid grid-cols-[20px_1fr_20px] items-center justify-center">
                 <Link href="/" className="flex flex-row gap-2 font-bold"> <span> ← </span> back  </Link>  
-                <span className="font-semibold items-center text-center justify-center text-xl">this is laura&apos;s profile</span>
+                <span className="font-semibold items-center text-center justify-center text-xl bg-orange-100">this is laura&apos;s profile</span>
             </div>
             
             <div className="grid grid-cols-[1fr_1fr] justify-center items-center gap-4">
 
                 <div className="text-center flex flex-col items-end">
                     
-                    <Image className="border-2 border-dotted border-red-300" src="/laura.png" alt="its's a wolf" width={300} height={300}/>
+                    <Image className="border-2 border-dotted border-red-300 bg-orange-100 z-0" src="/laura.png" alt="its's a wolf" width={300} height={300}/>
 
                 </div>
 
                 <div className="text-center flex flex-col items-start">
-                    <span className="relative w-1/2 top-1/2"> laura is a junior @ <span className="text-purple-600 font-bold">Northwestern University</span>, studying Computer Science and Russian. incoming swe intern @ <span className="text-green-600 font-bold"> duolingo </span> </span>
+                    <span className="relative w-1/2 top-1/2 bg-orange-100"> laura is a junior @ <span className="text-purple-600 font-bold">Northwestern University</span>, studying Computer Science and Russian. incoming swe intern @ <span className="text-green-600 font-bold"> duolingo </span> </span>
                 </div>
 
             </div>
