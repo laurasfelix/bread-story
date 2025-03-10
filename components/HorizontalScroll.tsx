@@ -12,6 +12,7 @@ export default function HorizontalScroll({ children }: HorizontalScrollProps) {
     const scrollContainer = scrollRef.current!;
   
     const onWheel = (e: WheelEvent) => {
+      
       const maxScrollLeft = scrollContainer.scrollWidth - scrollContainer.clientWidth;
       if (
         (e.deltaY < 0 && scrollContainer.scrollLeft === 0) ||
@@ -28,7 +29,7 @@ export default function HorizontalScroll({ children }: HorizontalScrollProps) {
   }, []);
 
   return (
-    <div ref={scrollRef} className="flex overflow-x-auto w-screen h-screen">
+    <div ref={scrollRef} className="flex overflow-x-auto w-[110vw] h-screen">
       {children}
     </div>
   );

@@ -140,7 +140,7 @@ export default function Home() {
           
 
           return (
-            <div key={index} ref={ref} className="w-screen flex bg-cover items-center p-2" style={{backgroundImage: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center", "alignItems": part.icon_part ? "center" : undefined}}>
+            <div key={index} ref={ref} className="w-screen flex bg-cover items-center p-2" style={{backgroundImage: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center", "alignItems": part.icon_part ? "center" : undefined, backgroundSize: part.image ? "90%" : "cover",backgroundRepeat: "no-repeat", backgroundPosition:"center"}}>
               
               {/* title of the story*/}
               {part.header && 
@@ -174,10 +174,10 @@ export default function Home() {
                 {/* Image panel */}
                 <div className="flex-shrink-0 w-screen h-screen items-center justify-center flex">
                 <motion.div
-                    initial={{ opacity: 0, y: 50 }}
+                    initial={{ opacity: 0, y: -400 }}
                     animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="bg-orange-100 p-10 rounded-xl shadow-lg w-full"
+                    className="bg-orange-100 p-10 rounded-xl shadow-lg w-full border-4 border-stone-800" 
                     style={{ maxWidth: "60vw"}}
                   >
                   <div className="font-bold text-xl text-center">{part.story?.title}</div>
@@ -190,10 +190,10 @@ export default function Home() {
                   <div className="flex flex-wrap gap-16 mt-4">
                   
                   <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
+                    initial={{ opacity: 0, x: -100 }}
+                    animate={inView ? { opacity: 1, x: 0 } : { opacity: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="bg-orange-100 p-10 rounded-xl shadow-lg w-full"
+                    className="bg-orange-100 p-10 rounded-xl shadow-lg w-full border-4 border-stone-800" 
                     style={{ maxWidth: "120vw"}}
                   >
                   
