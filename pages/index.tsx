@@ -244,11 +244,12 @@ export default function Home() {
             
             {/* icons below */}
             {part.icon_part &&
-              <div className="flex flex-row items-start justify-center self-center min-w-full h-screen">
+              <div className="flex flex-row items-start justify-center self-center min-w-full h-[70vh]">
                 {part.icons?.map((icon, inx) =>
                 (
-                  <div key={inx}  className="flex flex-col items-center justify-center hover:scale-125">
-                    <Link href={icon.link}> <img src={`${icon.image_src}`} className="object-contain h-96 w-auto" /> </Link>
+                  <div key={inx}  className="flex flex-col items-center justify-center">
+                    <p className="text-xl font-bold bg-orange-200"> {icon.name} </p>
+                    <Link href={icon.link}> <img src={`${icon.image_src}`} className="object-contain h-96 w-auto hover:scale-125" /> </Link>
                   </div>
                 ))
                 
