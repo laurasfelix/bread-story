@@ -288,8 +288,17 @@ export default function Home() {
                           <Link href={icon.link} className="w-fit bg-sky-200 rounded-lg self-center"> {icon.link} </Link>
                         </div>
 
-                        <div className="flex-1">
-                          {icon.text}
+                        <div className="flex-1 flex flex-col gap-4 text-left m-2">
+                          <p className="text-lg"> {icon.text} </p>
+                          <p> <span className="font-bold"> operation hours: </span>{icon.hours} </p>
+                          <p> <span className="font-bold"> address: </span> {icon.address}</p>
+                         
+                          <div className="flex flex-col gap-1">
+                            <p> <span className="font-bold"> email: </span> {icon.email} </p>
+                            <p> <span className="font-bold"> phone: </span>{icon.phone} </p>
+                          </div>
+                         
+                          
                         </div>
 
 
