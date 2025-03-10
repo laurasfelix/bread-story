@@ -17,7 +17,7 @@ export default function Zoe(){
                 </div>
 
                 <div className="text-center flex flex-col items-start">
-                    <span className="relative w-1/2 top-1/2 bg-orange-100"> ZOE INCOMING </span>
+                    <span className="relative w-1/2 top-1/2 bg-orange-100"> Zoe is pursuing a Journalism major, Classics minor, and certificates in Integrated Marketing Communications and Design. She is a third culture kid with roots in Shanghai, Taipei and California. She loves writing, drinking coffee, logging her restaurants on Beli, seeing the world, and watching SNL. She also loves bread. With a passion. </span>
                 </div>
 
             </div>
