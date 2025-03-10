@@ -144,7 +144,8 @@ export default function Home() {
   };
 
   const handleX = (idx:number) => {
-    const part = story_info[-1];
+
+    const part = story_info[story_info.length - 1];
     const biz  = part.icons?[idx] : null;
 
     if (biz) {
@@ -280,10 +281,10 @@ export default function Home() {
                       <img src={`${icon.image_src}`} onClick={() => handleClick(inx)} className="object-contain h-96 w-auto hover:scale-125" /> 
                     }
                     {choice === inx &&
-                    <div className="object-contain bg-stone-100 h-96 w-[95%] text-center flex flex-col border-2 border-green-200 mt-4">
+                    <div className="object-contain bg-stone-100 h-auto min-h-96 w-[95%] text-center flex flex-col border-2 border-green-200 mt-4">
 
                         <div className="flex-none bg-amber-200 text-left pl-3 font-black text-lg flex gap-8">
-                          <p className="bg-red-300 rounded-3xl shrink w-fit pl-1 pr-1"> x </p>
+                          <button onClick={()=> {handleX(inx)}} className="bg-red-300 rounded-3xl shrink w-fit pl-1 pr-1"> x </button>
 
                           <Link href={icon.link} className="w-fit bg-sky-200 rounded-lg self-center"> {icon.link} </Link>
                         </div>
