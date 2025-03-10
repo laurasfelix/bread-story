@@ -136,6 +136,7 @@ export default function Home() {
 
     ], image:false, section_title:"An ecosystem of small bakeries"},
 
+    {blurb: true, image:false, text:`RizeUp. Flour & Branch. The Mill. Click on each bakery to discover more about these inspiring small businesess that are creating a lasting impact in the San Francisco community.`},
 
     {image: false, icon_part:true, icons:[
       {image_src:"/rize.png", name:"RizeUp Bakery", hours:"Monday - Friday 7am to 3pm", phone:"415-964-4706", link:"https://rizeupsourdough.com/", email:"", text:"RizeUp Bakery is a Black-owned wholesale bakery transforming traditional sourdough with cultural influences around the world. RizeUp’s bread can be found at local supermarkets across San Francisco and pre-ordered online.", address:"1160 Howard St, San Francisco, CA 94103"},
