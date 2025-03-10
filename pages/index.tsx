@@ -128,6 +128,30 @@ export default function Home() {
     
   ];
 
+  const [choice, setChoice] = useState(-1);
+
+  const handleClick = (idx: number) => {
+   
+    const part = story_info[story_info.length - 1];
+   
+    const biz  = part?.icons?[idx] : null;
+
+    if (biz) {
+   
+      setChoice(idx);
+    }
+    
+  };
+
+  const handleX = (idx:number) => {
+    const part = story_info[-1];
+    const biz  = part.icons?[idx] : null;
+
+    if (biz) {
+      setChoice(-1);
+    } 
+  }
+
 
 
   return (
@@ -193,7 +217,7 @@ export default function Home() {
                     initial={{ opacity: 0, x: -100 }}
                     animate={inView ? { opacity: 1, x: 0 } : { opacity: 0 }}
                     transition={{ duration: 0.8 }}
-                    className="bg-orange-100 p-10 rounded-xl shadow-lg w-full border-4 border-stone-800" 
+                    className="bg-orange-100 p-10 rounded-xl shadow-lg w-full md:w-1/2 border-4 border-stone-800" 
                     style={{ maxWidth: "120vw"}}
                   >
                   
@@ -247,9 +271,31 @@ export default function Home() {
               <div className="flex flex-row items-start justify-center self-center min-w-full h-[70vh]">
                 {part.icons?.map((icon, inx) =>
                 (
-                  <div key={inx}  className="flex flex-col items-center justify-center">
+                  <div key={inx}  className="flex flex-col items-center justify-center flex-1">
                     <p className="text-xl font-bold bg-orange-200"> {icon.name} </p>
-                    <Link href={icon.link}> <img src={`${icon.image_src}`} className="object-contain h-96 w-auto hover:scale-125" /> </Link>
+                    <div>
+
+                    {choice != inx && 
+                     
+                      <img src={`${icon.image_src}`} onClick={() => handleClick(inx)} className="object-contain h-96 w-auto hover:scale-125" /> 
+                    }
+                    {choice === inx &&
+                    <div className="object-contain bg-stone-100 h-96 w-[95%] text-center flex flex-col border-2 border-green-200 mt-4">
+
+                        <div className="flex-none bg-amber-200 text-left pl-3 font-black text-lg flex gap-8">
+                          <p className="bg-red-300 rounded-3xl shrink w-fit pl-1 pr-1"> x </p>
+
+                          <Link href={icon.link} className="w-fit bg-sky-200 rounded-lg self-center"> {icon.link} </Link>
+                        </div>
+
+                        <div className="flex-1">
+                          {icon.text}
+                        </div>
+
+
+                    </div>
+                    }
+                    </div>
                   </div>
                 ))
                 
