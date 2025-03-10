@@ -261,14 +261,14 @@ export default function Home() {
                 </div>
                 <motion.div>
                   {/* looping through paragraphs for better aesthetics */}
-                  <div className="flex flex-col gap-2"> 
+                  <div className="flex flex-col gap-2 "> 
 
                     {part.section_title && 
                     <div className="flex flex-col p-2">
-                      <p className="font-bold text-xl text-center"> {part.section_title} </p>
+                      <p className="font-bold text-xl text-center bg-orange-100"> {part.section_title} </p>
                     </div>}
 
-                    <div className="flex flex-col gap-5">
+                    <div className="flex flex-col gap-5 bg-orange-100">
                       {part?.paragraph?.map((lines, idx) =>
                         {
                           return (

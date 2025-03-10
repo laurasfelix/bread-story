@@ -21,3 +21,61 @@ body {
     background-size: 90%;
   }
 }
+
+/* Floating Icons Container */
+.floating-icons {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0; /* Keeps them behind everything */
+  pointer-events: none; /* Prevents interaction */
+}
+
+/* Base Floating Icon Styles */
+.floating-icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.7; /* Make them semi-transparent */
+  
+  /* Use CSS variables for random positioning */
+  top: var(--random-top);
+  left: var(--random-left);
+
+  /* Apply floating animation */
+  animation: float var(--random-speed) infinite ease-in-out alternate;
+  animation-delay: var(--random-delay);
+}
+
+/* Random Background Images */
+.floating-icon:nth-child(1) { background-image: url("icon1.png"); }
+.floating-icon:nth-child(2) { background-image: url("icon2.png"); }
+.floating-icon:nth-child(3) { background-image: url("icon3.png"); }
+.floating-icon:nth-child(4) { background-image: url("icon4.png"); }
+.floating-icon:nth-child(5) { background-image: url("icon5.png"); }
+.floating-icon:nth-child(6) { background-image: url("icon6.png"); }
+.floating-icon:nth-child(7) { background-image: url("icon7.png"); }
+.floating-icon:nth-child(8) { background-image: url("icon8.png"); }
+.floating-icon:nth-child(9) { background-image: url("icon9.png"); }
+.floating-icon:nth-child(10) { background-image: url("icon10.png"); }
+.floating-icon:nth-child(11) { background-image: url("icon11.png"); }
+.floating-icon:nth-child(12) { background-image: url("icon12.png"); }
+.floating-icon:nth-child(13) { background-image: url("icon13.png"); }
+.floating-icon:nth-child(14) { background-image: url("icon14.png"); }
+.floating-icon:nth-child(15) { background-image: url("icon15.png"); }
+
+/* Floating Animation */
+@keyframes float {
+  from {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-10px) rotate(360deg);
+    opacity: 0.8;
+  }
+}
