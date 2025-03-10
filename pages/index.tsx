@@ -165,7 +165,7 @@ export default function Home() {
           
 
           return (
-            <div key={index} ref={ref} className="w-screen flex bg-cover items-center p-2 bg-md-90" style={{backgroundImage: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center", "alignItems": part.icon_part ? "center" : undefined ,backgroundRepeat: "no-repeat", backgroundPosition:"center"}}>
+            <div key={index} ref={ref} className={`w-screen flex bg-cover items-center p-2 ${part.image ? "bg-md-90" : "md:bg-cover"}`} style={{backgroundImage: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center", "alignItems": part.icon_part ? "center" : undefined ,backgroundRepeat: "no-repeat", backgroundPosition:"center"}}>
               
               {/* title of the story*/}
               {part.header && 
