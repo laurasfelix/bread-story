@@ -3,10 +3,10 @@ import { useState, useRef, useEffect} from "react";
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
 import Link from "next/link";
-import Image from "next/image";
 import HorizontalScroll from "@/components/HorizontalScroll";
 
 import { Fira_Sans } from 'next/font/google'
+import { image } from "framer-motion/client";
 
 const FiraSans = Fira_Sans({subsets:[ 'latin'], weight:"400"})
 
@@ -164,6 +164,32 @@ export default function Home() {
    
   }}
 
+  const [bg, setBg] = useState(1);
+  const [url, setUrl] = useState("/bg1.jpeg");
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false);     
+      const nextBg = bg === 6 ? 1 : bg + 1;
+      const nextUrl = `/bg${nextBg}.jpeg`;
+
+      const img = new Image();
+      img.src = nextUrl;
+
+      img.onload = () => {
+        setTimeout(() => {
+          setUrl(nextUrl);
+          setBg(nextBg);
+          setFade(true);
+        }, 700);
+      };
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [bg]);
+
+
   const [choice, setChoice] = useState(-1);
 
   const handleClick = (idx: number) => {
@@ -201,7 +227,7 @@ export default function Home() {
           
 
           return (
-            <div key={index} ref={ref} className={`w-screen flex bg-cover items-center p-2 ${part.image ? "bg-md-90" : "md:bg-cover"}`} style={{backgroundImage: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center", "alignItems": part.icon_part || part.blurb ? "center" : undefined ,backgroundRepeat: "no-repeat", backgroundPosition:"center"}}>
+            <div key={index} ref={ref} className={`w-screen flex bg-cover items-center p-2 ${part.image ? "bg-md-90" : "md:bg-cover"} ${part.header ? 'transition-opacity duration-700 ease-in-out' : undefined} `} style={{backgroundImage: part.header ? `url(${url})` : `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center", "alignItems": part.icon_part || part.blurb ? "center" : undefined ,backgroundRepeat: "no-repeat", backgroundPosition:"center"}}>
               
               {/* title of the story*/}
               {part.header && 
