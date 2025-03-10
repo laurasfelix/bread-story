@@ -21,6 +21,7 @@ export default function Home() {
         `“There is something sort of magical about gifting someone a loaf of warm bread,” said Josey Baker, the owner of another San Francisco bakery, Josey Baker Bread. Like Anderson, Baker fell in love with sourdough while baking in his apartment and eventually opened The Mill, a bakery-cafe in Hayes Valley.`,
         `Bakeries have long been central to the culture of San Francisco. From the 1849 Gold Rush when French immigrants started Boudin Bakery to the sensationalization of San Francisco-born Tartine across the world, bakeries have brought the community together. The pandemic, however, sharpened some residents’ desire for spaces of community gathering — places offering warmth, comfort and connection. In a difficult political and economic landscape — with waves of layoffs and the closure of longtime bread wholesaler Bakers of Paris — some small bakeries have also provided for employees in ways that large corporations have not.`, 
     ], image:false},
+    {blurb: true, image:false, text:`Find out more right below about three bakeries in San Francisco that have been giving a new meaning to what it means to make bread and build community.`},
     {text: "1", image_src: "/rize.jpeg", alt:"it's an empty bakery", image: "true", story:  {title: "Feeding the Soul", paragraph: [[
       `Prior to COVID, Anderson never saw himself making sourdough.`,
       `“I had never seen anyone that looked like me that was a baker, so I just assumed that I couldn't really do it,” Anderson said.`,
@@ -182,7 +183,7 @@ export default function Home() {
           
 
           return (
-            <div key={index} ref={ref} className={`w-screen flex bg-cover items-center p-2 ${part.image ? "bg-md-90" : "md:bg-cover"}`} style={{backgroundImage: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center", "alignItems": part.icon_part ? "center" : undefined ,backgroundRepeat: "no-repeat", backgroundPosition:"center"}}>
+            <div key={index} ref={ref} className={`w-screen flex bg-cover items-center p-2 ${part.image ? "bg-md-90" : "md:bg-cover"}`} style={{backgroundImage: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center", "alignItems": part.icon_part || part.blurb ? "center" : undefined ,backgroundRepeat: "no-repeat", backgroundPosition:"center"}}>
               
               {/* title of the story*/}
               {part.header && 
@@ -282,6 +283,24 @@ export default function Home() {
                 </motion.div>
                
               </div>}
+
+              {part.blurb &&
+              <div className="grid md:grid-cols-[1fr_1fr_1fr] grid-cols-1 min-w-full ">
+                <div>
+                </div>
+             
+              <motion.div className="bg-orange-900 rounded-xl text-orange-100 font-bold p-1 brown-box">
+                {/* looping through paragraphs for better aesthetics */}
+            
+
+                  <p className="text-left text-lg">{part.text}</p>
+          
+              
+              </motion.div>
+             
+            </div>
+
+              }
 
             
             {/* icons below */}

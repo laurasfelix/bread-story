@@ -79,3 +79,19 @@ body {
     opacity: 0.8;
   }
 }
+
+.brown-box{
+
+  animation: box 5s infinite ease-in-out alternate;
+}
+
+@keyframes box {
+  from {
+    transform: translateY(0) rotate(-2deg);
+    
+  }
+  to {
+    transform: translateY(-10px) rotate(2deg);
+    
+  }
+}
