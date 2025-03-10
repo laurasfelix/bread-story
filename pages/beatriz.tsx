@@ -17,7 +17,11 @@ export default function Beatriz(){
                 </div>
 
                 <div className="text-center flex flex-col items-start">
-                    <span className="relative w-1/2 top-1/2 bg-orange-100"> Communication studies and psychology double major w/ design and IMC certificate. Super passionate about hot chocolate, marketing, education, Brazil, and chocolate croissants. </span>
+                    <span className="relative w-1/2 top-1/2 bg-orange-100"> B.S. Communication Studies and Psychology with Certificates in Design and Integrated Marketing Communications at <span className="font-bold text-purple-600"> Northwestern University</span>. Originally from Brazil, Beatriz lives in Chicago, IL, but is currently in San Francisco for a quarter-long academic and professional immersion in UX/UI Design and Communications with Northwestern. She is passionate about marketing, Brazil, education, and has a special place in her heart for hot chocolates and chocolate croissants. 
+
+<span className="font-bold"> Contact: </span>
+<span> beatrizfonseca2027@u.northwestern.edu </span>
+<span className="text-sky-600">https://www.linkedin.com/in/beatrizaguiarfonseca/ </span> </span>
                 </div>
 
             </div>
