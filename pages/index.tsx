@@ -43,8 +43,11 @@ export default function Home() {
       paragraph:["With an online fanbase of over 50k, Josey Baker is a bread-fluencer.",
 
       ]
-   
-    }}
+    }},
+
+    {image: false, icon_part:true, icons:[
+      {image_src:""},
+    ]}
     
   ];
 
@@ -54,13 +57,13 @@ export default function Home() {
     <div className="relative w-screen min-h-screen">
 
 
-      <div className="relative z-10 flex flex-col items-center w-screen" >
+      <div className="relative z-10 flex flex-col items-center w-screen gap-16">
         {story_info.map((part, index) => {
-          const { ref, inView } = useInView({ threshold: 0.3, triggerOnce: false });
+          const { ref, inView } = useInView({ threshold: 0.2, triggerOnce: false });
           
 
           return (
-            <div key={index} ref={ref} className="w-screen flex bg-cover items-center p-2 gap-4" style={{backgroundImage: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center"}}>
+            <div key={index} ref={ref} className="w-screen flex bg-cover items-center p-2" style={{backgroundImage: `url('${part.image_src}')`, "justifyContent": part.header ? "start": "center"}}>
               
               {/* title of the story*/}
               {part.header && 
@@ -70,7 +73,7 @@ export default function Home() {
       
                 <motion.div className="relative z-20 pt-10" initial={{ opacity: 0, y: 100 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0 }}
-                transition={{ duration: 0.5 }}>
+                transition={{ duration: 1 }}>
             
                   <div className="flex items-center flex-col items-center justify-center text-3xl gap-2 p-4 bg-orange-200 rounded-md border-2 border-orange-800" >
                     <div className={`text-[2.30rem] font-black self-start text-orange-800 drop-shadow-[0_0.5px_0.5px_rgba(0,0,0,1)]`}>BREAKING BREAD: </div>
