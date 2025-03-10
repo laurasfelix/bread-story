@@ -12,3 +12,12 @@ body {
   background: var(--background);
   cursor: url('cursor.cur'), auto;
 }
+.bg-md-90 {
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .bg-md-90 {
+    background-size: 90%;
+  }
+}
