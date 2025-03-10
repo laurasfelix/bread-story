@@ -25,22 +25,30 @@ export default function Home() {
       `Prior to COVID, Anderson never saw himself making sourdough.`,
       `“I had never seen anyone that looked like me that was a baker, so I just assumed that I couldn't really do it,” Anderson said.`,
       `Growing up Black in New Orleans and the Bay Area, Anderson was a professional roller skater and a private chef before he ever thought of baking. It wasn’t until the pandemic hit that his journey in baking began. Encouraged by friends during the isolation of Covid-19, Anderson took up baking sourdough as a way to channel his energy and process his deep frustration with the state of the world.`,
-      `“The murder of George Floyd really spun me out,” Anderson said. “The fact that every day you walk out might be your last for no apparent reason broke my heart and broke my brain.”`,
-`For months, Anderson was consumed by anger and despair. He either wanted to throw something at a wall or break down in tears. To cope, Anderson retreated to his basement to work on his bread and on himself.`,
+     
     ],[
+      `“The murder of George Floyd really spun me out,” Anderson said. “The fact that every day you walk out might be your last for no apparent reason broke my heart and broke my brain.”`,
+      `For months, Anderson was consumed by anger and despair. He either wanted to throw something at a wall or break down in tears. To cope, Anderson retreated to his basement to work on his bread and on himself.`,
     `"The act of bread-making made me very happy," Anderson said. "When I was doing it, everything else disappeared."`,
     `Eventually, a social media follower from Brooklyn asked him to ship and sell his bread and opened the floodgates to his business.`,
-    `“It was like a little Tamagotchi, which is very similar to your starter to begin with," he said. "You show it care and it doubles in size."`,
-    `From the 10 loaves produced in his home soon expanded to more than 600 loaves daily in his current bakery, Anderson has since hired employees, rented out space and is working on a new bakery concept. Anderson’s audience grew as well — from an initial 3,000 people to 28,000 Instagram followers — without spending a penny on advertising.`,
+    
 
     ],[
+      `“It was like a little Tamagotchi, which is very similar to your starter to begin with," he said. "You show it care and it doubles in size."`,
+    `From the 10 loaves produced in his home soon expanded to more than 600 loaves daily in his current bakery, Anderson has since hired employees, rented out space and is working on a new bakery concept. Anderson’s audience grew as well — from an initial 3,000 people to 28,000 Instagram followers — without spending a penny on advertising.`,
+      
+
+    ], 
+    [
       `In November 2023, Rize Up was robbed and lost over $70,000 worth of goods and equipment. However, the community that Anderson always showed up for, showed up for him too. Members of the community donated and other chefs showed up with food for his employees. That’s when he knew he was on the right track.`,
-`“When you know that what you do matters to people, and they show up for you, it makes it a lot easier to pick yourself up and dust yourself off and fight the good fight," he said.`,
+      `“When you know that what you do matters to people, and they show up for you, it makes it a lot easier to pick yourself up and dust yourself off and fight the good fight," he said.`,
+    ],
+    [
       `For Anderson, it's not just about the bread, it’s the connection it fosters. Sometimes, that connection is as simple as the knock on his door from a homeless neighbor in need of a loaf.`,
       `“When I give them the bread and they say thank you,” Anderson said. “That might be what I really make today. That’s what feeds my soul.”`,
       `“I can make the world better one beautiful loaf of bread at a time,” Anderson said. “And I really believe that — whether it's employing people and making sure people are happy and feeling seen, donating to food insecurity, inspiring other people to raise money or donate their time or their energy to feed the homeless.”`,
-
     ]
+
     
     ]}},
    
@@ -49,11 +57,15 @@ export default function Home() {
         `For three months, Lauren Arnsdorff and her husband Michael Eskenasy lived out of their car to cover the cost of running their bakery in San Francisco.`,
         `“I don't think people realize how hard it is,” says Arnsdorff. “We were technically homeless. We were trying to get the business up and running, and at the same time, gave some of our employees raises, because it was so hard to keep good people.”`,
 
-        `Arnsdorff and Eskenasy may have sacrificed for their bakery, Flour & Branch, but they would do it all over again.  Growing up, Arnsdorff watched Ina Garten and Martha Stewart in her kitchen at breakfast time, mimicking their recipes in her free time. When she ran into some health concerns in her twenties, her doctor encouraged her to use all-natural ingredients in her baking, allowing her to enjoy her baked goods while taking care of her body.`, 
-
-     `“I can create the best cookie available, but it has to be with the best ingredients possible,” Arnsdorff said.`,
+       
 
       ], [
+        `Arnsdorff and Eskenasy may have sacrificed for their bakery, Flour & Branch, but they would do it all over again.  Growing up, Arnsdorff watched Ina Garten and Martha Stewart in her kitchen at breakfast time, mimicking their recipes in her free time. When she ran into some health concerns in her twenties, her doctor encouraged her to use all-natural ingredients in her baking, allowing her to enjoy her baked goods while taking care of her body.`, 
+
+        `“I can create the best cookie available, but it has to be with the best ingredients possible,” Arnsdorff said.`,
+
+      ],
+      [
 
         `In early 2020, Arnsdorff found herself laid-off from her corporate finance role and quarantined at home. She decided that it was the perfect time to pursue her passion and incorporated Flour & Branch.`,
 
@@ -61,21 +73,22 @@ export default function Home() {
 
 `Arnsdorff first built her community nationally through a shipping business in October 2020. She made nearly 200 iterations of each cookie and rented out a 200 square foot kitchen. As her cookies grew in popularity, appearing in national publications like FoodNetwork and Forbes, she hired more staff and rented out a larger space to accommodate.`, 
 
-`However, San Francisco’s COVID protocols delayed Flour & Branch’s operations. Even though Arnsdorff worked closely with the health inspector to ensure the health and safety of her employees, implementing various COVID protocols led to delays and setbacks in the operations of the bakery.`, 
+
+      ], [
+        `However, San Francisco’s COVID protocols delayed Flour & Branch’s operations. Even though Arnsdorff worked closely with the health inspector to ensure the health and safety of her employees, implementing various COVID protocols led to delays and setbacks in the operations of the bakery.`, 
 
 `“It's really hard because you can't just say, ‘Oh well, it's okay.’ You really have to take the hit,” says Arnsdroff. “I’m trying to navigate that and be strong for my employees, but I'm terrified.”`,
 
 
-      ], [
-
-       ` After Arnsdorff persevered through the first two years, Arnsdorff’s husband Michael Eskenasy joined her team as the Chief Operating Officer of the bakery. With his help, Arnsdorff and Eskenasy opened the doors to their storefront in December of 2021, selling cookies, pastries, brunch and beverages.`, 
-
-`“I just want to make it better a little bit each day,” says Arnsdroff. “In the process of that, [the bakery] became the space that people just want to spend time in.”`,
+      ],[
+        ` After Arnsdorff persevered through the first two years, Arnsdorff’s husband Michael Eskenasy joined her team as the Chief Operating Officer of the bakery. With his help, Arnsdorff and Eskenasy opened the doors to their storefront in December of 2021, selling cookies, pastries, brunch and beverages.`, 
+        `“I just want to make it better a little bit each day,” says Arnsdroff. “In the process of that, [the bakery] became the space that people just want to spend time in.”`,
+      ],
+      [
 
 `While Flour & Branch has garnered a regular customer base, Arnsdorff and Eskenasy are still working in the grassroots, bringing extra goods to concierges at hotels and leaving food at offices in the neighborhood to generate more visibility in the neighborhood post-COVID. Ensuring welfare among their employee family is often difficult, Arnsdorff said.`,
 
 `“You honestly feel like you're dying every day,” says Arnsdorff. “But it's fulfilling. I would never change it. I would do it all over again.”`,
-
 
       ]
       
@@ -87,20 +100,24 @@ export default function Home() {
 
         `At the center of The Mill, a bakery-cafe, is a large wooden communal table.`,
 `“For a lot of people, there's a little bit of vulnerability in their first cup of coffee,”  said Josey Baker, owner of Josey Baker Bread. “We want people who walk into the place to feel welcomed here. They can come when [they’re] alone, with my friends, with a book, or come to have a meeting.”`,
-`The Mill first opened its doors in 2012 as a collaboration between Four Barrels Coffee and Josey Baker Bread, specializing in house-milled flour and all-organic ingredients. Baker oversaw the production of the bread, especially his famous whole grain sourdough.`,
+
+
+
+      ],[
+        `The Mill first opened its doors in 2012 as a collaboration between Four Barrels Coffee and Josey Baker Bread, specializing in house-milled flour and all-organic ingredients. Baker oversaw the production of the bread, especially his famous whole grain sourdough.`,
 `“I am interested in whole grain sourdough bread because I think it's delicious, healthy, and allows for more transparency with the ingredients,” Baker said.`,
-
-
       ],[
 
         `After working in education curriculum development for a few years, Josey Baker was given a sourdough starter. Being in San Francisco, the beating heart of the bread baking tradition in the United States, Baker fell in love with sourdough and the baking process, making and selling bread in his free time. In 2010, Baker was approached with the opportunity to collaborate on The Mill and jumped into the project full-time.`, 
-`The Mill and Josey Baker Bread quickly found a massive online and in-person following for their bread and coffee. Visitors come from all over the nation and from San Francisco. But it’s not just the bread bringing people together.`,
 
 
       ],[
-
+        `The Mill and Josey Baker Bread quickly found a massive online and in-person following for their bread and coffee. Visitors come from all over the nation and from San Francisco. But it’s not just the bread bringing people together.`,
         `“Our space is one of communal revelry and being a part of a community,” Baker said.`,
 
+      ],[
+
+       
 `Being part of the community extends beyond the space for The Mill. The staff has participated in local school fundraisers and donated their profits towards causes like relief for the Los Angeles County fires.`, 
 
 `“You could totally pick up The Mill and plop it down in 100 different places in this country or in this world, and it would fail,” Baker said. “It's not just The Mill, it’s a San Francisco cafe bakery.”`,
