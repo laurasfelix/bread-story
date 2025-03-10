@@ -269,7 +269,7 @@ export default function Home() {
             
             {/* icons below */}
             {part.icon_part &&
-              <div className="flex flex-row items-start justify-center self-center min-w-full h-[70vh]">
+              <div className="flex flex-col md:flex-row items-start justify-center self-center min-w-full min-h-[70vh]">
                 {part.icons?.map((icon, inx) =>
                 (
                   <div key={inx}  className="flex flex-col items-center justify-center flex-1">

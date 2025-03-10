@@ -29,7 +29,7 @@ export default function HorizontalScroll({ children }: HorizontalScrollProps) {
   }, []);
 
   return (
-    <div ref={scrollRef} className="flex overflow-x-auto w-[110vw] h-screen">
+    <div ref={scrollRef} className="flex overflow-x-auto w-[90vw] h-screen">
       {children}
     </div>
   );
